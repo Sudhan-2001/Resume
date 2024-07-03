@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<script src="https://web3forms.com/client/script.js" async defer></script>
+	 <title>JACK</title>
+	 <script>
+function myFunction() {
+  var x = document.getElementById("contain");
+   var y = document.getElementById("contain2");
+   
+  if (x.style.visibility === "hidden" && y.style.visibility === "hidden") {
+    x.style.visibility = "visible";
+	y.style.visibility = "hidden";
+  }
+  else if(x.style.visibility === "visible" && y.style.visibility === "hidden"){
+  y.style.visibility = "visible";
+  x.style.visibility = "hidden";}
+   else if(y.style.visibility === "visible" && x.style.visibility === "hidden"){
+  x.style.visibility = "visible";
+  y.style.visibility = "hidden";}
+  
+
+}
+
+</script>
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"><img src="img/logo.png" class="nav-img"></a>
+			<div class="nav-link">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Galery.html">Galery</a></li>
+					<li><a href="Contact.html">ContactUs</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+	<div class="something">
+		<h2>Quick response or Sequence Response</h2>
+		<button onclick="myFunction()" class="togglebtn">Click to change</button>
+	</div>
+	<div class="contain" id="contain" style="visibility:hidden">
+	<form action="https://api.web3forms.com/submit" method="POST">
+	<div>
+	<h2 class="contain-left" >Get in Touch with Quick response<h2>
+	</div>
+	<input type="hidden" name="access_key" value="1f898a86-60fa-4e24-a6fb-bce68e6b12c5">
+	<div class="cform">
+	
+	
+	<div class="inputbox">
+	<span>User Name</span>
+	<input type="text" name="name"  class="btn">
+		<i></i>
+	</div>
+
+	<div class="inputbox">
+		<span>User Mail</span>
+	<input type="email" name="email"  class="btn">
+	<i></i>
+	</div>
+
+	<div class="inputbox">
+	
+	<textarea  name="message" placeholder="Comments.."class="btn"></textarea>	
+	<i></i>
+	</div>
+	
+	
+	<input type="submit" class="sub-btn">
+	</div>
+	</form>
+		</div>
+		
+		<br><br>
+		
+			<div class="contain2" id="contain2" style="visibility:hidden">
+	<form action="https://api.web3forms.com/submit" method="POST">
+	<div>
+	<h2 class="contain-left" >Get in Distance Touch Sequence Response<h2>
+	</div>
+	<input type="hidden" name="access_key" value="1f898a86-60fa-4e24-a6fb-bce68e6b12c5">
+	<div class="cform">
+	
+	
+	<div class="inputbox">
+	<span>User Name</span>
+	<input type="text" name="name"  class="btn">
+		<i></i>
+	</div>
+
+	<div class="inputbox">
+		<span>User Mail</span>
+	<input type="email" name="email"  class="btn">
+	<i></i>
+	</div>
+
+	<div class="inputbox">
+		<textarea  name="message" placeholder="Comments.."class="btn"></textarea>	
+	<i></i>
+	</div>
+
+	<input type="file" class="upload" name="file">
+	
+	
+	<input type="submit" class="sub-btn">
+	</div>
+	</form>
+		</div>
+		</div>
+</section>
+</body>
+</html>	

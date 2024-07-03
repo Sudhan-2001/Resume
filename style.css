@@ -1,0 +1,114 @@
+*{margin:0;padding:0; }
+.header{font-family: "Bebas Neue", sans-serif;width: 100%;height:700px;background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/back.jpg);
+	background-position: center;background-size: cover;position: relative;}
+.header-about{font-family: "Bebas Neue", sans-serif;width: 100%;height:800px;background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/back-about.jpg);
+	background-position: center;background-size: cover;position: relative;}	
+	.header-resume{font-family: "Bebas Neue", sans-serif;width: 100%;height:2600px;background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/back-about.jpg);
+	background-position: center;background-size: cover;position: relative;background-repeat:repeat-x}	
+nav{display: flex;padding: 1% 8%;justify-content: space-between;align-items: center;}
+nav img{width: 110px;}
+.nav-link{flex: 1;text-align: right;}
+.nav-link ul li{list-style: none;padding: 8px 12px;position: relative; display: inline-block;color: white;font-size: 20px;}
+.nav-link ul li a{color: white;text-decoration: none;}
+.nav-link ul li::after{content: '';width: 0%;height: 3px;background:#f44336;display: block;margin:auto;transition: 0.4s;cursor: pointer;}
+.nav-link ul li:hover::after{width: 100%;}
+.text-box{border:2px white solid;width: 90%;height: 20%; left: 50%;top: 50%;padding: 50px; color: white;position: absolute;transform: translate(-50%,-50%);}
+.text-box:hover{background-color: #4d4544; box-shadow: 5px 10px 8px #888888;}
+
+.box       {border:2px solid white;color:white;padding:20px;margin:30px;text-align:center;width:25%;float:left;}
+.box-center{border:2px solid white;color:white;padding:20px;margin:30px;text-align:center;width:25%;float:right;}
+.box-down  {border:2px solid white;color:white;padding:50px;height:25%;margin-bottom:30px;width:100%;text-align:center;float:center;}
+
+.heading{font-size:50px;color:white;text-align:center;margin:0px;padding:25px;  font-family: "Protest Riot", sans-serif;cursor:pointer;}
+.heading:hover{}
+
+.contain-left{padding:20px;}
+.cform{border-radius:10px;outline:none;border-box:none;font-size:20px;}
+input,textarea{background-color:lightgray;padding:8px 25px;margin:7px;border-radius:10px;z-index:10;outline:none;font-family: "Bebas Neue", sans-serif;}
+textarea{padding:20px 50px;margin-left:70px;text-align:center;}
+.sub-btn{
+	margin-left:40px;background-color:green;width:350px;height:40px;
+	border-radius:50px;border:none;padding:10px;color:white;
+}.sub-btn:hover{
+	border:1px solid lightgray;
+}
+.contain{position:absolute;text-align:center;border:2px dashed white;border-radius:10px;width:30%;outline:none;border-box:none;
+		left:30%;margin-top:50px;color:white;padding:20px;}
+.contain2{position:absolute;text-align:center;border:2px dashed white;border-radius:10px;width:30%;outline:none;
+		left:30%;margin:0px;color:white;padding:20px;}
+.something{position:relative;}
+
+.togglebtn{border:none;padding: 10px;border-radius: 10px;transition: 0.6s;color:green;background-color: azure;width: 10%;align-items: center;margin-left:45%;margin-top: 20px;}
+.togglebtn:hover{color: white;background-color: gray;transition: 0.6s;}
+h2{color: white;margin: 0px;text-align: center;align-items: center;}
+.name{font-size:4rem;text-align:center;color:#f26005; font-family: "Protest Revolution", sans-serif;padding-top:50px;}
+.typewrite{align-items:center;margin-left:550px;color:#0ced1f;  font-family: "Protest Riot", sans-serif;text-decoration:none;font-size:2em;}
+.social-links{font-size: 24px;
+  display: inline-block; color: #0cdeed;align-items:center;margin-left:550px;padding:20px;
+  line-height: 1; margin-right: 20px; transition: 0.3s;}
+  .fa{padding:10px;}
+.social-links a:hover {color: #0563bb;}
+.not1,.not2,.not3{width:300px;heigh:200px;padding:150px;margin-left:400px;}  
+.no{text-align:center;} 
+.ab{color:white;text-align:center;padding-top:250px;font-size:2em;}
+.ab::after{content: '';width: 0%;height: 3px;background:#f48936;display: block;margin:auto;transition: 0.4s;cursor: pointer;}
+.ab:hover::after{width: 10%;}
+.resume-about p{font-family: "Josefin Sans", sans-serif;color:white;text-align:center;font-size:1em;padding: 20px;text-decoration:none;}
+#fa{padding: 10px;text-align: left;margin-left: 900px;text-decoration:none;color:white;}
+#fa:hover{color:#38944c;cursor:pointer;}
+#fa-r:hover{color:#38944c;cursor:pointer;}
+#fa-r{padding: 10px;margin-left:100px;text-align:left;}
+.upload{width:180px;color:black;font-size: 10px;margin-left: 60px;height: 20px;}
+.abimg{position:relative;width:300px;height:300px;float:left;margin-left:250px;}
+.abimg-l{position:relative;width:300px;height:300px;float:right;margin-right:250px;}
+.abimg:hover{width:310px;height:310px;transition:1s;}
+.abimg-l:hover{width:310px;height:310px;transition:1s;}
+
+
+@media  screen and (max-width:740px) {
+	body{width: 100%;height:100%;}
+		.header-about{height:1000px;}
+.text-box{font-size:10px;width: 50%;height: 20%; left: 50%;top: 50%;padding: 30px; color: white;position: absolute;transform: translate(-50%,-50%);}
+.box       {font-size:10px;color:white;padding:20px;text-align:center;width:50%;}
+.box-center{font-size:10px;color:white;padding:20px;text-align:center;width:50%;}
+.box-down  {font-size:10px;color:white;padding:20px;width:50%;text-align:center;margin-left:30px;float:left;}
+.tables{align-items: center;}
+h2{color: white;margin: 0px;text-align: center;align-items: center;}
+.togglebtn{border:none;padding: 15px;border-radius: 10px;color:green;background-color: azure;text-align: center; align-items: center;margin-left:40%;margin-top: 20px;width: 140px;}
+.togglebtn:hover{color: white;background-color: gray;}
+.contain{position:absolute;text-align:center;border:1px solid white;border-radius:10px;width:50%;outline:none;border-box:none;
+		left:30%;margin-top:50px;color:white;padding:20px;}
+.contain2{position:absolute;text-align:center;border:1px solid white;border-radius:10px;width:50%;outline:none;
+		left:30%;margin:0px;color:white;padding:20px;}
+textarea{padding:20px 50px;margin-left:15px;text-align:center;}
+.sub-btn{
+	margin-left:40px;background-color:green;width:200px;height:40px;
+	border-radius:50px;border:none;padding:10px;color:white;
+}.sub-btn:hover{
+	border:1px solid lightgray;
+}
+.name{font-size:2rem;text-align:center;color:#f26005; font-family: "Protest Revolution", sans-serif;padding-top:50px;}
+.typewrite{text-align:center;color:#0ced1f; margin:0px;margin-left:200px; font-family: "Protest Riot", sans-serif;text-decoration:none;font-size:1em;}
+.social-links{font-size: 20px;display:inline;color: #0cdeed; margin:0px;margin-left:100px;align-items:center;padding:20px;
+  line-height: 1;  transition: 0.3s;}
+.resume-about p{font-family: "Josefin Sans", sans-serif;color:white;text-align:center;font-size:1em;
+ text-decoration:none;}
+ .header-resume{font-family: "Bebas Neue", sans-serif;width: 100%;height:3200px;background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/back-about.jpg);
+	background-position: center;background-size: cover;position: relative;background-repeat:repeat-x}	
+ .ab{color:white;text-align:center;margin-top:250px;font-size:2em;}
+.abimg  {position:absolute;padding-bottom:40px;width:300px;height:300px;float:center;margin-left:100px;margin-top:270px;}
+.abimg-l{position:absolute;padding-bottom:40px;width:300px;height:300px;float:center;margin-left:100px;margin-top:270px;}
+.abimg:hover{position:absolute;padding-bottom:40px;width:300px;height:300px;float:left;margin-left:100px;margin-top:270px;}
+.abimg-l:hover{position:absolute;padding-bottom:40px;width:300px;height:300px;float:center;margin-left:100px;margin-top:270px;}
+#fa{text-align: center;text-decoration:none;color:white;margin:0px;}
+#fa:hover{color:#38944c;cursor:pointer;}
+#fa-r:hover{color:#38944c;cursor:pointer;}
+#fa-r{padding: 10px;margin:0px;text-align: center;text-decoration:none;}
+
+
+
+}
+
+
+
+/**/
